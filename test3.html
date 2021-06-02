@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Just a test sort</title>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="destest3.css">
+    </head>
+    <body>
+        <!--<script src = "test3.js">
+        </script>
+         <script src = "selsort.js"></script>
+         <script src = "mergesort.js"></script>-->
+        <h1>Sorting Visualizer</h1>
+        <br>
+        <div class = "bar">
+        <label for="range" style="color:white; font-family:'Courier New', Courier, monospace;"><strong>No of bars:</strong></label>
+        <input type="range" id="ran" min="25" max="98" onclick="create()">
+        </div>
+        <br>
+        <div class = "fast">
+        <label for="veloc" style = "color:white; font-family:'Courier New', Courier, monospace;"><strong>Speed:</strong></label>
+        <input type="range"  id ="vel"  min="150" max="950" value="550" onclick="speed()">
+    </div>
+        <br><br>
+        <ul>
+        <li><button type="button" onclick="create()">New Array</button></li>
+        <li><button type="button" id ="bub" onclick="bubsort()">Bubble Sort</button></li>
+        <li><button type="button" id = "sel" onclick="selsort()">Selection Sort</button></li>
+        <li><button type="button"  onclick="inssort()">Insertion Sort</button></li>
+        <li><button type="button">Quick Sort</button></li>
+        <li><button type="button" id="mer">Merge Sort</button></li>
+        </ul>
+        <br>
+        
+        <div class="canv">
+            <canvas id="can" style="border:solid 2px black; background-color:black;">
+            </canvas></div>
+        <br>
+        <script src = "test3.js">
+        </script>
+         <script src = "selsort.js"></script>
+         <script src = "mergesort.js"></script>
+         <p id = "demo" style="color:aqua"></p>
+    </body>
+</html>
