@@ -1,0 +1,47 @@
+*
+{
+    background-color:black;
+    font-family:'Courier New', Courier, monospace;
+}
+button{
+    background-color:black;
+    color:green;
+}
+h1{
+    text-align:center;
+    color: white;
+}
+li{
+    float:center;
+    display:inline;
+}
+li button:hover{
+    background-color:white;
+}
+ul{
+    display:block;
+}
+
+#can
+{
+    width: 80%;
+    height: 80%;
+    display: block;
+}
+
+.canv
+{
+    padding:50px;
+    margin:20px;
+}
+
+.fast
+{
+    text-align:center;
+}
+
+.bar
+{
+    text-align:center;
+}
+
