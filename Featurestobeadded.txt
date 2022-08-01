@@ -1,0 +1,5 @@
+-> Timer running to show the  Time taken for each sort.	
+-> Disable all buttons when process is carried out. (Tick)
+-> Have Heap sort and Quick Sort.(Like Major 5 sorts)
+-> Make it more easy.
+-> Have  pause in program.

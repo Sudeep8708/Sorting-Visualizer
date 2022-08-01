@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Sorting Visualizer</h1>
+        <div class = "bars">
+        <div>
+       <span style = "color:white; font-family:'Courier New', Courier, monospace;font-weight:bold;" class = "disbut">No of bars: </span>
+        <input type="range" id="ran" min="10" max="90" onclick="create()" class = "disbut"></div>
+
+        <div><span style = "color:white; font-family:'Courier New', Courier, monospace;font-weight:bold;"> Speed: </span>
+        <input type="range"  id ="vel"  min="150" max="2000" onclick="speed()"></div>
+    </div>
+        <ul>
+            
+        <li><button type="button" onclick="create()" class = "disbut">New Array</button></li>
+        <li><button type="button" id ="bub" onclick="bubsort()" class = "disbut">Bubble Sort</button></li>
+        <li><button type="button" id = "sel" onclick="selsort()" class = "disbut">Selection Sort</button></li>
+        <li><button type="button"  onclick="inssort()" class = "disbut">Insertion Sort</button></li>
+        <li><button type="button"  id="quick" class = "disbut">Quick Sort</button></li>
+        <li><button type="button"  onclick="mergeSort()" class = "disbut">Merge Sort</button></li>
+        <li><button type = "button" class = 'pause'>Pause</button></li>
+        <li><button type = "button" class = 'reset' onclick = "reset()">Reset</button></li>
+        <li><span id = 'timer'><span>Timer: </span><span id="minutes">00</span>:<span id="seconds">00</span></span></li>
+        </ul>
+        <br>
+        
+            <canvas id="can" style="border:solid 2px black; background-color:black;">
+            </canvas>
+        <script src = "index.js">
+        </script>
+    </body>
+</html>
